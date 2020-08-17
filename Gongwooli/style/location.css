@@ -1,0 +1,588 @@
+/* -------------------------
+
+    mobile 우선으로 디자인
+
+---------------------------*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #31373c;
+    font-family: 'helvetica neue';
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 26%;
+    margin: 0 auto;
+    position: absolute;
+}
+.header_img {
+    position: relative;
+    width: 94%;
+    height: auto;
+    margin: 0 auto;
+    z-index: 10;
+}
+.header_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+}
+.header_logo {
+    width: 100%;
+    height: auto;
+    margin-top: -42px;
+    text-align: center;
+    z-index: 100;
+}
+.header_logo img {
+    width: 64px;
+    height: 64px;
+    padding: 5px;
+    border: 3px solid #fff;
+    border-radius: 90px;
+}
+
+/* content */
+section {
+    position: absolute;
+    width: 100%;
+    height: 67%;
+    margin-top: 37%;
+    z-index: 5;
+    overflow: auto;
+}
+.content_layout {
+    width: 94%;
+    height: 100%;
+    margin: 4%;
+    border-radius: 5px;
+    background: #ecf0f1;
+    margin: auto;
+    overflow: auto;
+}
+
+.prev_btn {
+  width: 30%;
+  height: 5%;
+  margin-top: 15%;
+  margin-left: 4%;
+}
+.prev_btn a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.prev_btn a:link { color: #333333; text-decoration: none;}
+.prev_btn a:visited { color: #333333; text-decoration: none;}
+.prev_btn a:hover { color: #3498db; text-decoration: none;}
+
+.prev_btn a h5 {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: table;
+    margin-top: 40px;
+    z-index: 100;
+}
+#location_name {
+    width: 70%;
+    height: auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #15aabf;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 100;
+}
+.floor {
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* content-image css */
+.info_wrapper {
+    width: 97%;
+    margin: 0 auto;
+    border: 3px solid #15aabf;
+    border-radius: 0.7rem;
+}
+.info_wrap {
+    position: relative;
+    padding-top: 55%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.info_wrap .path_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+.info_wrap .path_wrap img {
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* content-image css End*/
+
+.tel {
+    width: 100%;
+    height: auto;
+    margin-top: 7%;
+    padding-left: 5%;
+    vertical-align: -webkit-baseline-middle;
+}
+.tel a {
+    font-style: none;
+    width: 100%;
+    height: 100%;
+}
+.tel img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+}
+.tel_num {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.developBy {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0px;
+    color: #ecf0f1;
+    font-size: 0.6rem;
+}
+
+
+/* -----------------------------------
+  Tablet - 768px~1024px 해상도에 적용
+----------------------------------- */
+@media ( min-width: 768px ) and ( max-width: 1024px ) {
+
+    /* header */
+    header {
+        height: 25%;
+    }
+    .header_img {
+        width: 96%;
+    }
+    .header_img img {
+        border-radius: 0 0 10px 10px;
+    }
+    .header_logo {
+        margin-top: -50px;
+    }
+    .header_logo img {
+        width: 94px;
+        height: 94px;
+        padding: 5px;
+        border-radius: 90px;
+    }
+
+    /* content */
+    section {
+        height: 65%;
+        overflow: auto;
+    }
+    .content_layout {
+        width: 95%;
+        border-radius: 10px;
+        background: #ecf0f1;
+    }
+    .title {
+        margin-top: 8%;
+    }
+    #location_name {
+        font-size: 2rem;
+        color: #15aabf;
+    }
+    .floor {
+        font-size: 1.6rem;
+    }
+    /* content-image css */
+    .info_wrapper {
+        border: 4px solid #15aabf;
+        border-radius: 0.8rem;
+    }
+    /* content-image css End*/
+    .tel {
+        margin-top: 4%;
+    }
+    .tel img {
+        width: 42px;
+        height: 42px;
+    }
+    .tel_num {
+        font-size: 1.6rem;
+        vertical-align: -webkit-baseline-middle;
+    }
+
+    /* footer */
+    .developBy {
+        color: #fff;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* -----------------------------------
+  ipad 가로 - 1024px 이상 해상도에 적용
+----------------------------------- */
+@media ( min-width: 1024px ) and (orientation : landscape) {
+
+    /* header */
+header {
+    height: 10%;
+}
+.header_img img {
+    border-radius: 0 0 10px 10px;
+}
+.header_logo {
+    width: 100%;
+    height: auto;
+    margin-top: -42px;
+    text-align: center;
+    z-index: 100;
+}
+.header_logo img {
+    width: 134px;
+    height: 134px;
+    padding: 5px;
+    border: 3px solid #fff;
+    border-radius: 90px;
+}
+
+/* content */
+section {
+    position: absolute;
+    width: 100%;
+    height: 73%;
+    z-index: 5;
+    margin-top: -38%;
+    overflow: auto;
+}
+.content_layout {
+    width: 94%;
+    height: 100%;
+    margin: 4%;
+    border-radius: 5px;
+    background: #ecf0f1;
+    margin: 0 auto;
+    overflow: auto;
+}
+.title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: table;
+    margin-top: 40px;
+    z-index: 100;
+}
+#location_name {
+    width: 70%;
+    height: auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #15aabf;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 100;
+}
+.floor {
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+.content img {
+    width: 100%;
+}
+.tel {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    padding-left: 5%;
+    vertical-align: -webkit-baseline-middle;
+}
+.tel a {
+    font-style: none;
+    width: 100%;
+    height: 100%;
+}
+.tel img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+}
+.tel_num {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.developBy {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0px;
+    color: #ecf0f1;
+    font-size: 0.6rem;
+}
+}
+
+/* 데스크탑 브라우저 가로 */
+@media only screen and (min-width : 1024px) {
+/* header */
+header {
+    height: 10%;
+    text-align: center;
+}
+.header_img {
+    width: 70%;
+    margin-top: -15%;
+}
+.header_logo {
+    margin-top: -62px;
+}
+.header_logo img {
+    width: 94px;
+    height: 94px;
+}
+
+/* content */
+section {
+    height: 75%;
+    margin-top: 12%;
+    overflow: auto;
+}
+.content_layout {
+    width: 70%;
+    overflow: auto;
+}
+#location_name {
+    font-size: 1.6rem;
+}
+.floor {
+    font-size: 1.3rem;
+}
+
+/* content-image css */
+.info_wrapper {
+    width: 90%;
+}
+.info_wrap {
+    padding-top: 50%;
+}
+/* content-image css End*/
+
+.tel {
+    margin-top: 5%;
+}
+
+/* footer */
+.developBy {
+    height: 6%;
+    color: #f6f6f6;
+    font-size: 0.8rem;
+}
+}
+
+
+
+/* 데스크탑 브라우저 가로 */
+@media only screen and (min-width : 1224px) {
+
+/* header */
+header {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.header_img {
+    width: 60%;
+    height: auto;
+    margin-top: -13%;
+}
+.header_img img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.header_logo {
+    margin-top: -75px;
+}
+.header_logo img {
+    width: 124px;
+    height: 124px;
+    border-radius: 90px;
+}
+
+/* content */
+section {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+.content_layout {
+    width: 60%;
+    border-radius: 10px;
+    overflow: auto;
+}
+.title {
+    margin-top: 6%;
+}
+#location_name {
+    font-size: 2rem;
+}
+.floor {
+    width: 100px;
+    height: auto;
+    font-size: 1.5rem;
+}
+/* content-image css */
+.info_wrapper {
+    width: 90%;
+}
+.info_wrap {
+    padding-top: 50%;
+}
+/* content-image css End*/
+.tel {
+    margin-top: 3%;
+}
+.tel img {
+    width: 34px;
+    height: 34px;
+}
+.tel_num {
+    font-size: 1.3rem;
+}
+
+/* footer */
+.developBy {
+    height: 5%;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+}
+
+/* 큰 모니터 */
+@media only screen and (min-width : 1824px) {
+    /* header */
+header {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.header_img {
+    width: 60%;
+    height: auto;
+    margin-top: -13%;
+}
+.header_img img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.header_logo {
+    margin-top: -75px;
+}
+.header_logo img {
+    width: 124px;
+    height: 124px;
+    border-radius: 90px;
+}
+
+/* content */
+section {
+    width: 100%;
+    height: 73%;
+    margin-top: 10%;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+.content_layout {
+    width: 60%;
+    border-radius: 10px;
+    overflow: auto;
+}
+.title {
+    margin-top: 6%;
+}
+#location_name {
+    font-size: 2rem;
+}
+.floor {
+    width: 100px;
+    height: auto;
+    font-size: 1.5rem;
+}
+/* content-image css */
+.info_wrapper {
+    width: 85%;
+}
+.info_wrap {
+    padding-top: 50%;
+}
+/* content-image css End*/
+.tel {
+    display: none;
+}
+
+/* footer */
+.developBy {
+    height: 5%;
+    color: #fff;
+    font-size: 0.9rem;
+}
+}

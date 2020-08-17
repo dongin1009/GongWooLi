@@ -1,0 +1,93 @@
+/* -----------------------------------
+  Tablet - 768px~1024px 해상도에 적용
+----------------------------------- */
+@media ( min-width: 768px ) and ( max-width: 1024px ) {
+    /* header */
+    .content_background {
+      width: 90%;
+    }
+    .content_background img {
+      width: 200%;
+      border-radius: 10px;
+    }
+
+    /* funtion_btn */
+    .funtion_btn_layout {
+        width: 100%;
+        bottom: 5%;
+    }
+    .btn {
+        border-radius: 15px;
+    }
+    .btn img {
+        width: 85%;
+        height: 85%;
+        padding: 7.5%;
+    }
+    #voice_rec {
+        width: 68px;
+        height: 68px;
+    }
+    #qr_code {
+        width: 68px;
+        height: 68px;
+    }
+
+    /* footer */
+    footer {
+        height: 45px;
+    }
+    .developBy {
+        color: #fff;
+        font-size: 0.8rem;
+    } */
+}
+
+
+
+/* -----------------------------------
+  Tablet 가로 적용
+----------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* header */
+    .content_background {
+      width: 92%;
+      height: 15%;
+    }
+    .content_background img {
+      width: 100%;
+      height: 550%;
+      border-radius: 10px;
+    }
+
+    .content_layout {
+      /* position: relative; */
+      width: 90%;
+      height: 100%;
+      border-radius: 5px;
+      background: #ecf0f1;
+      margin-left: 5%;
+      margin-right: 5%;
+      overflow: auto;
+    }
+
+    /* funtion_btn */
+    #voice_rec {
+        width: 68px;
+        height: 68px;
+    }
+    #qr_code {
+        width: 68px;
+        height: 68px;
+    }
+
+    /* footer */
+    footer {
+        height: 47px;
+    }
+    .developBy {
+        z-index: 100;
+        color: #fff;
+        font-size: 1rem;
+    }
+}

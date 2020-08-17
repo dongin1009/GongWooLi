@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #eeeded;
+    margin: 0;
+    padding: 0;
+    font-family: 'helvetica neue';
+}
+
+.back {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #15aabf;
+}
+
+.qr_btn_layer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 50%;
+}
+
+.qr_btn {
+    border: 2px solid #15aabf;
+}
+
+/* -----------------------------------
+  Tablet - 768px~1024px 해상도에 적용
+----------------------------------- */
+@media ( min-width: 768px ) and ( max-width: 1024px ) {
+    .back {
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 4%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #15aabf;
+    }
+    
+    .qr_btn {
+        border: 3px solid #15aabf;
+    }
+}
+
+/* -----------------------------------
+  Desktop - 1024px 이상 해상도에 적용
+----------------------------------- */
+@media ( min-width: 1024px ) {
+}
